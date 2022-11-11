@@ -59,7 +59,7 @@ def translation(ray, d):
     rayP.vector = np.matmul(T, ray.vector)
     return rayP
 
-def AperturStop():
+def ApertureStop():
     """ 
     Aperture Stop is the aperture in the system that limits
     the bundle of light that propagates through the system
@@ -68,15 +68,15 @@ def AperturStop():
     
 def EP():
     """ 
-    Entrance Pupil is the image of the ApStop in the object space.
+    Entrance Pupil is the image of the AperStop in the object space.
     """
 
 def XP():
     """
-    eXit Pupil is the the image of the ApStop in the image space.
+    eXit Pupil is the the image of the AperStop in the image space.
     """
 
-def MarRay():
+def MargRay():
     """ 
     Marginal Ray starts at the axial object position, goes through
     edge of the entrance pupil and defines image locations and 
@@ -99,7 +99,7 @@ def ChiefRay():
     are denoted ybar and nubar.
     
     Whenever the CR crosses the axis, a pupil or the stop is
-    located, and the pupil radius is given by the marginal
+    located, and the pupil radius is given by the MR
     height in that plane.
     
     """
